@@ -1,0 +1,16 @@
+{
+    "name":  "workflow",
+    "version":  "1.3.1",
+    "description":  "Fluxo independente para planejar, executar e verificar projetos técnicos e jogos.",
+    "author":  {
+                   "name":  "Isaac"
+               },
+    "license":  "MIT",
+    "skills":  "./skills/",
+    "interface":  {
+                      "displayName":  "Workflow",
+                      "shortDescription":  "Planejamento e verificação de projetos",
+                      "developerName":  "Isaac",
+                      "category":  "Developer Tools"
+                  }
+}

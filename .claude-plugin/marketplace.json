@@ -1,0 +1,14 @@
+{
+  "name": "workflow",
+  "description": "Fluxo independente para planejar, executar e verificar projetos técnicos e jogos.",
+  "owner": {
+    "name": "Isaac"
+  },
+  "plugins": [
+    {
+      "name": "workflow",
+      "source": "./",
+      "description": "Fluxo independente para planejar, executar e verificar projetos técnicos e jogos."
+    }
+  ]
+}

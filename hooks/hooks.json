@@ -6,7 +6,7 @@
                                            "hooks":  [
                                                          {
                                                              "type":  "command",
-                                                             "command":  "node -e \"console.log(JSON.stringify({systemMessage:\u0027Workflow 1.3.1 ativo. Ainda está em desenvolvimento, então podem ocorrer falhas. Vamos corrigi-las ao longo do desenvolvimento.\u0027}))\"",
+                                                             "command":  "node -e \"console.log(JSON.stringify({systemMessage:\u0027Workflow 1.5.0 ativo. Ainda está em desenvolvimento, então podem ocorrer falhas. Vamos corrigi-las ao longo do desenvolvimento.\u0027}))\"",
                                                              "timeout":  3
                                                          }
                                                      ]

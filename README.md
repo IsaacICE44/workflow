@@ -12,6 +12,14 @@ No Claude Code, o pacote disponibiliza o agente próprio de revisão de entregas
 
 O Workflow incorpora [12 skills do Superpowers 7.0.2](third-party/superpowers/README.md), incluindo brainstorming, planejamento, depuração e verificação. As referências internas usam o namespace do Workflow.
 
+## Biblioteca sob demanda
+
+O [índice do ECC](library/ecc/CATALOG.md) referencia 314 skills incluídas na pasta library. Elas ficam disponíveis para leitura seletiva em clientes com acesso aos arquivos do plugin. O Workflow abre as instruções pertinentes à tarefa e delega quando a divisão de trabalho justificar o custo. Skills locais de outras origens e integrações podem ser usadas quando o cliente já as disponibiliza.
+
+## Ferramentas sob demanda
+
+O pacote inclui [Watch, Context Mode, RTK e Headroom](library/tools/README.md). Os executáveis distribuídos de RTK e Headroom têm alvo Windows x64. A integração reaproveita os servidores já configurados no cliente ou permite apontar para os componentes incluídos. Os servidores MCP são iniciados quando configurados pelo usuário.
+
 ## Instalação pelo GitHub
 
 Depois de publicar o repositório, substitua `SEU_USUARIO` pelo seu usuário.
@@ -24,7 +32,7 @@ Depois de publicar o repositório, substitua `SEU_USUARIO` pelo seu usuário.
 /reload-plugins
 ```
 
-Ao abrir, retomar ou limpar uma sessão, o hook de inicialização exibe **Workflow 1.3.1 ativo. Ainda está em desenvolvimento, então podem ocorrer falhas. Vamos corrigi-las ao longo do desenvolvimento.** quando o Claude Code executa o evento. O aviso usa Node.js e independe de enviar uma tarefa. Para invocação manual, use `/workflow:workflow`.
+Ao abrir, retomar ou limpar uma sessão, o hook de inicialização exibe **Workflow 1.5.0 ativo. Ainda está em desenvolvimento, então podem ocorrer falhas. Vamos corrigi-las ao longo do desenvolvimento.** quando o Claude Code executa o evento. O aviso usa Node.js e independe de enviar uma tarefa. Para invocação manual, use `/workflow:workflow`.
 
 ### Codex
 

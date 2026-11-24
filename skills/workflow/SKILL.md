@@ -7,6 +7,16 @@ description: Fluxo autônomo de Isaac para decidir, planejar, implementar, revis
 
 Responda em português do Brasil. Ao retomar o trabalho, recupere a etapa atual na fonte disponível, como código, plano, issue ou artefato. Identifique o resultado esperado e quem vai usá-lo.
 
+## Selecione contexto sob demanda
+
+Resolva tarefas diretas sem delegar. Para trabalho que pede uma prática especializada, identifique a etapa e a stack, pesquise por palavras-chave no [índice ECC](../../library/ecc/CATALOG.md) e abra primeiro o `SKILL.md` mais relevante. Busque pelo nome ou pela descrição com uma ferramenta de busca, limitando a saída aos candidatos pertinentes. Leia referências e scripts quando a etapa exigir. Use outras skills instaladas ou conectores do cliente conforme a necessidade e a disponibilidade.
+
+Ao delegar, envie somente objetivo, arquivos, restrições e verificação. Deixe a investigação ampla com um responsável e peça evidência curta. Em verificações, filtre saídas extensas para erros e resultados relevantes. Preserve o contexto necessário para testar com segurança.
+
+Para vídeos, carregue o Watch. Para saídas extensas, comece filtrando no comando e use RTK para comandos repetitivos. Use Context Mode para indexar e recuperar trechos ou Headroom MCP para comprimir uma saída ainda grande. Reuse a instalação ou o MCP já disponível antes de procurar as cópias em [ferramentas incluídas](../../library/tools/README.md). Use só a ferramenta que resolve o problema e preserve erros, limites da saída e evidências.
+
+Em clientes sem acesso à biblioteca de arquivos do plugin, use as skills expostas pelo cliente e execute o fluxo com os dados disponíveis.
+
 ## 1. Decida o que fazer e como fazer
 
 Use primeiro a skill incluída `workflow:brainstorming` quando houver decisões de produto, design ou abordagem em aberto. Use `workflow:writing-plans` quando a solução já estiver definida e precisar ser dividida em etapas verificáveis. Para mudanças pequenas ou já bem definidas, aplique somente a análise necessária e preserve o escopo.
@@ -39,4 +49,4 @@ Peça que o agente responda em português do Brasil e aplique os critérios do p
 
 Use `workflow:verification-before-completion`. Execute o fluxo real, confira estados afetados e reporte as evidências, verificações pendentes e o próximo passo concreto. Para jogos, siga o [roteiro de gameplay](references/jogos.md).
 
-As skills do Superpowers e os agentes selecionados do ECC fazem parte deste pacote. Alethe pode complementar a coordenação quando já estiver disponível.
+As skills do Superpowers, os agentes selecionados do ECC e a biblioteca ECC sob demanda fazem parte deste pacote. Alethe pode complementar a coordenação quando já estiver disponível.

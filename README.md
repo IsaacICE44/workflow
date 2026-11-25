@@ -8,6 +8,23 @@ Abra uma conversa e descreva a tarefa normalmente. O fluxo começa decidindo o q
 
 Diga `modo foco` para receber atualizações e respostas finais em até três linhas na conversa. Diga `detalhar` para expandir uma resposta ou `sair do modo foco` para voltar ao formato padrão.
 
+## Revisão cruzada local
+
+O comando reúne 12 papéis executores e 12 críticos. Cada crítico avalia as 12 contribuições, incluindo a do seu par, com evidência e sugestão. Contribuições com pedidos de correção voltam para seus responsáveis. O relatório JSON registra as rodadas e indica aprovação pelos críticos, impasse ou interrupção.
+
+Use Node.js 20+ e inicie três instâncias locais de `llama-server` com seus pesos GGUF. Os exemplos usam nomes de arquivo ilustrativos.
+
+```text
+llama-server -m planejamento.gguf --host 127.0.0.1 --port 8080 -c 16384
+llama-server -m codigo.gguf --host 127.0.0.1 --port 8081 -c 16384
+llama-server -m critica.gguf --host 127.0.0.1 --port 8082 -c 16384
+node scripts/revisao-local.mjs pedido.txt relatorio.json 3
+```
+
+Use um caminho de relatório novo a cada execução. Inclua objetivo, critérios de aceitação e evidências de verificação no pedido. A inferência usa a máquina local. As três instâncias precisam caber juntas na memória disponível.
+
+O comando gera e revisa propostas em texto. Para validar scripts, importações ou renders, execute os checks no projeto e forneça os resultados como evidência. A revisão visual desta versão usa evidências textuais.
+
 ## Agentes incluídos
 
 No Claude Code, o pacote disponibiliza o agente próprio de revisão de entregas e [oito agentes do ECC 2.2.3](third-party/ecc/README.md). Eles são carregados diretamente pelo Workflow.

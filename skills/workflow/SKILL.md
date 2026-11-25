@@ -7,6 +7,14 @@ description: Fluxo autônomo de Isaac para decidir, planejar, implementar, revis
 
 Responda em português do Brasil. Ao retomar o trabalho, recupere a etapa atual na fonte disponível, como código, plano, issue ou artefato. Identifique o resultado esperado e quem vai usá-lo.
 
+## Modo Foco
+
+Ative quando a pessoa pedir `modo foco` e mantenha a preferência na conversa até ela pedir `sair do modo foco`. O agente principal aplica o formato às atualizações e à resposta final, sem alterar a execução, os checks ou os artefatos solicitados.
+
+Antes de enviar, confira se a mensagem tem até três linhas de texto separadas por quebras de linha. Use, nessa ordem, o resultado ou estado atual, uma pendência ou limitação relevante e uma próxima ação concreta. Omita os itens que não se aplicam. Preserve os fatos essenciais e use links curtos quando necessário.
+
+Quando a pessoa pedir `detalhar`, expanda apenas a resposta solicitada e retome o limite nas mensagens seguintes.
+
 ## Selecione contexto sob demanda
 
 Resolva tarefas diretas sem delegar. Para trabalho que pede uma prática especializada, identifique a etapa e a stack, pesquise por palavras-chave no [índice ECC](../../library/ecc/CATALOG.md) e abra primeiro o `SKILL.md` mais relevante. Busque pelo nome ou pela descrição com uma ferramenta de busca, limitando a saída aos candidatos pertinentes. Leia referências e scripts quando a etapa exigir. Use outras skills instaladas ou conectores do cliente conforme a necessidade e a disponibilidade.

@@ -4,6 +4,10 @@ Plugin independente de Isaac para planejar, executar e verificar entregas em por
 
 Abra uma conversa e descreva a tarefa normalmente. O fluxo começa decidindo o que fazer e como verificar o resultado. O pacote inclui skills do Superpowers e agentes do ECC. Alethe pode complementar a delegação quando estiver disponível.
 
+## Modo Foco
+
+Diga `modo foco` para receber atualizações e respostas finais em até três linhas na conversa. Diga `detalhar` para expandir uma resposta ou `sair do modo foco` para voltar ao formato padrão.
+
 ## Agentes incluídos
 
 No Claude Code, o pacote disponibiliza o agente próprio de revisão de entregas e [oito agentes do ECC 2.2.3](third-party/ecc/README.md). Eles são carregados diretamente pelo Workflow.
